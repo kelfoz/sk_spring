@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public ModelAndView home() {
-        log.info("GET/ HomePage LOL");
+        log.info("GET/ HomePage returns index.html");
         return new ModelAndView("index");
     }
 }
